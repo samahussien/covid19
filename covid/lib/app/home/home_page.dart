@@ -2,8 +2,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class homePage extends StatelessWidget {
-  String valueChoose;
-  List listItem = ["usa", "egypt", "china"];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -47,11 +45,48 @@ class homePage extends StatelessWidget {
                   child: Column(
                     children: [
                       Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text(
                             'COVID-19',
                             style:
                                 TextStyle(color: Colors.white, fontSize: 28.0),
+                          ),
+                          SizedBox(
+
+                            height: 50,
+                            width: 145,
+                            child: RaisedButton(
+                              color: Colors.white,
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+
+
+                                children: [
+                                  Container(
+                                    height:40,
+                                      width: 40,
+                                      child: Image.asset('images/usa.png')),
+                                  Text(
+                                    'USA',
+                                    style: TextStyle(
+                                      color: Colors.black87,
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.bold
+                                    ),
+                                  ),
+                                  Icon(
+                                    Icons.arrow_drop_down,
+                                    color: Colors.grey,
+                                  ),
+                                ],
+                              ),
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.all(
+                                    Radius.circular(25.0),
+                                  )),
+                              onPressed: () {},
+                            ),
                           ),
                         ],
                       ),
