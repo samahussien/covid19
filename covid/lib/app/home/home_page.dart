@@ -19,7 +19,7 @@ class homePage extends StatelessWidget {
       child: Column(
         children: [
           Container(
-            height: 240,
+            height: 245,
             alignment: Alignment.topRight,
             decoration: BoxDecoration(
                 color: Color(0xFF311B92),
@@ -90,7 +90,7 @@ class homePage extends StatelessWidget {
                           ),
                         ],
                       ),
-                      SizedBox(height: 8.0),
+                      //SizedBox(height: 5.0),
                       Row(
                         children: [
                           Expanded(
